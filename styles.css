@@ -1,0 +1,179 @@
+/* Estilos generales */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #f4f7f6 !important;
+}
+
+/* Estilos para el jumbotron (encabezado principal) */
+.jumbotron {
+    background: url('https://source.unsplash.com/1600x900/?technology') center/cover no-repeat;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.jumbotron p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: #ff6f61;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #ff4a3d;
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+ul li::before {
+    content: "\2713";
+    /* Checkmark */
+    color: #ff6f61;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #f4f7f6;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #ff4a3d;
+}
+
+/* Enlaces */
+a {
+    color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4a3d;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 3rem 1.5rem;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 2rem 1.5rem;
+    }
+}
